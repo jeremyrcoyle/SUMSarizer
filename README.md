@@ -55,12 +55,17 @@ Run like prod (useful to test if foreman is crashing on deploy):
 
 Deploy
 ---
+	
 
 	git push heroku master
 
 Make sure there is a web process running:
 
 	heroku ps:scale web=1
+	
+Setup heroku
+
+	heroku git:remote
 
 Migrations
 ---
